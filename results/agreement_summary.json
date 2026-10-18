@@ -1,0 +1,126 @@
+{
+  "n_files": 1000,
+  "n_bootstrap": 2000,
+  "seed": 42,
+  "primary_k": 20,
+  "scope": "Bootstrap over the sampled files only. The three trained models are fixed, so this captures sampling variability of the explanation rankings, not variability from retraining the models.",
+  "pairs": [
+    {
+      "k": 20,
+      "pair": "XGBoost vs LightGBM",
+      "shared": 16,
+      "jaccard": 0.667,
+      "boot_mean": 0.678,
+      "ci_low": 0.6,
+      "ci_high": 0.739
+    },
+    {
+      "k": 20,
+      "pair": "Random Forest vs XGBoost",
+      "shared": 4,
+      "jaccard": 0.111,
+      "boot_mean": 0.118,
+      "ci_low": 0.081,
+      "ci_high": 0.143
+    },
+    {
+      "k": 20,
+      "pair": "Random Forest vs LightGBM",
+      "shared": 6,
+      "jaccard": 0.176,
+      "boot_mean": 0.156,
+      "ci_low": 0.111,
+      "ci_high": 0.177
+    }
+  ],
+  "sensitivity": [
+    {
+      "k": 10,
+      "pair": "XGBoost vs LightGBM",
+      "shared": 9,
+      "jaccard": 0.818,
+      "boot_mean": 0.773,
+      "ci_low": 0.667,
+      "ci_high": 1.0
+    },
+    {
+      "k": 10,
+      "pair": "Random Forest vs XGBoost",
+      "shared": 3,
+      "jaccard": 0.176,
+      "boot_mean": 0.176,
+      "ci_low": 0.176,
+      "ci_high": 0.176
+    },
+    {
+      "k": 10,
+      "pair": "Random Forest vs LightGBM",
+      "shared": 3,
+      "jaccard": 0.176,
+      "boot_mean": 0.176,
+      "ci_low": 0.176,
+      "ci_high": 0.176
+    },
+    {
+      "k": 20,
+      "pair": "XGBoost vs LightGBM",
+      "shared": 16,
+      "jaccard": 0.667,
+      "boot_mean": 0.678,
+      "ci_low": 0.6,
+      "ci_high": 0.739
+    },
+    {
+      "k": 20,
+      "pair": "Random Forest vs XGBoost",
+      "shared": 4,
+      "jaccard": 0.111,
+      "boot_mean": 0.118,
+      "ci_low": 0.081,
+      "ci_high": 0.143
+    },
+    {
+      "k": 20,
+      "pair": "Random Forest vs LightGBM",
+      "shared": 6,
+      "jaccard": 0.176,
+      "boot_mean": 0.156,
+      "ci_low": 0.111,
+      "ci_high": 0.177
+    },
+    {
+      "k": 50,
+      "pair": "XGBoost vs LightGBM",
+      "shared": 44,
+      "jaccard": 0.786,
+      "boot_mean": 0.762,
+      "ci_low": 0.724,
+      "ci_high": 0.818
+    },
+    {
+      "k": 50,
+      "pair": "Random Forest vs XGBoost",
+      "shared": 26,
+      "jaccard": 0.351,
+      "boot_mean": 0.349,
+      "ci_low": 0.333,
+      "ci_high": 0.351
+    },
+    {
+      "k": 50,
+      "pair": "Random Forest vs LightGBM",
+      "shared": 24,
+      "jaccard": 0.316,
+      "boot_mean": 0.323,
+      "ci_low": 0.316,
+      "ci_high": 0.351
+    }
+  ],
+  "h2": {
+    "k": 20,
+    "fraction_boosting_pair_higher_than_both_rf_pairs": 1.0,
+    "gap_boosting_minus_mean_rf_pairs": 0.541,
+    "gap_ci_low": 0.44,
+    "gap_ci_high": 0.643
+  }
+}

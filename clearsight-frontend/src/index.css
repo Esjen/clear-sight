@@ -1,0 +1,50 @@
+:root {
+  /* Color tokens */
+  --color-bg: #f4f5f3;
+  --color-surface: #ffffff;
+  --color-ink: #14181d;
+  --color-ink-muted: #565f68;
+  --color-border: #d8dcdf;
+  --color-accent: #1f4b8f;
+  --color-malicious: #a3321f;
+  --color-malicious-bg: #fbeeec;
+  --color-benign: #1f6d4a;
+  --color-benign-bg: #eaf4ef;
+
+  /* Type tokens */
+  --font-serif: "Source Serif 4", Georgia, serif;
+  --font-sans: "Public Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+button:focus-visible,
+input:focus-visible,
+select:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
